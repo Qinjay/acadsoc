@@ -1,0 +1,36 @@
+.my-header1,.my-footer1{width:100%;}
+.register-sec{
+    width:70%;
+    min-width:900px;
+    margin:0 auto;
+    box-shadow:0px 0px 10px 5px #E5F3F8;
+}
+.register-sec:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.register-sec-left{
+    position:relative;
+    width:32%;
+    float:left;
+    background:#fff;
+    text-align:justify;
+    padding:0 2.5rem;
+}
+.register-sec>img{width:60%;
+    float: right;}
+.register-sec-left>a{
+    font-size:1.2rem;
+    color:#1BBC9B;
+}
+.register-sec-left>div>input{
+    width:80%;
+    height:3rem;
+    border:2px solid #E5E5E5;
+    border-radius:23px;
+    margin:1rem;
+    padding-left:2rem;
+    font-size: 1.1rem;
+    color: #E5E5E5;
+}
