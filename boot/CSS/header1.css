@@ -1,0 +1,17 @@
+.header-1{
+    margin:2rem auto;
+    width:60%;
+    background:#0F7F67;
+}
+.header-1:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.header-1>img:first-child{
+    float:left;
+}
+.header-1>img:last-child{
+    float:right;
+    margin-top:1rem;
+}
