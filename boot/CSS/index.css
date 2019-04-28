@@ -552,15 +552,21 @@ ul .sec-f5-right-li:nth-child(8){
 	margin:1rem;
 }
 .sec-right-fix>div>p{
+	margin:-3.5rem 0.8rem;
+}
+
+.sec-right-fix>div>p>a{
 	color:rgba(255,255,255,0);
 	font-size:1rem;
-	margin:-3rem 0.7rem;
 }
+
+
+
 .sec-right-fix>div img{
 	padding:0.8rem;
 }
 .sec-right-fix>div:first-child:hover img{visibility:hidden;}
-.sec-right-fix>div:first-child:hover p{
+.sec-right-fix>div:first-child:hover p>a{
 	visibility:visible;
 	color:rgba(255,255,255,1);
 }
