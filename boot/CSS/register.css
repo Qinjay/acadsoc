@@ -15,15 +15,18 @@
     width:32%;
     float:left;
     background:#fff;
-    text-align:justify;
-    padding:0 2.5rem;
+    text-align:left;
+    padding:5rem 2.5rem;
 }
+
 .register-sec>img{width:60%;
     float: right;}
 .register-sec-left>a{
-    font-size:1.2rem;
+    font-size:1.5rem;
     color:#1BBC9B;
+    margin:3rem;
 }
+
 .register-sec-left>div>input{
     width:80%;
     height:3rem;
@@ -32,5 +35,34 @@
     margin:1rem;
     padding-left:2rem;
     font-size: 1.1rem;
-    color: #E5E5E5;
+    color:#8e8a8a;
+}
+#view,#get-yz{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 23px;
+    margin:2rem 0;
+}
+#view{
+    width: 90%;
+    display:block;
+    background:#1BBC9B;
+    color: #fff;
+}
+#get-yz{
+    display:inline-block;
+    width:40%;
+    color:#1BBC9B;
+    border:2px solid #1BBC9B;
+}
+.register-sec-left>div>input+input{width:35%}
+
+.register-sec>p{padding:2rem 0;float:left;}
+
+#dl{
+    float:right;
+    color:#f00;
+    font-size:1.2rem;
 }
