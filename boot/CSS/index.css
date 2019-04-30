@@ -19,7 +19,7 @@ header a:hover{
 .head1 span{color:#fff;}
 .head2{
 	position:absolute;
-	right:10%;
+	right:4%;
 }
 .head2 ul>li{
 	line-height:35px;
@@ -50,11 +50,6 @@ nav>ul{
 	width:50%;
 	justify-content:space-between;
 }
-/*nav>a>img{
-    width:145px;
-    height:70px;
-
-}*/
 nav ul,nav div{margin-top:30px;}
 
 nav ul{
@@ -74,7 +69,7 @@ nav ul li a:hover{
 }
 nav div{
 	position:absolute;
-	right:4%;
+	right:1%;
 }
 nav div a{
 	border:1px solid #05AB8A;
@@ -150,10 +145,7 @@ nav div a{
 .free-col-p{
 	margin-left:18px;
 }
-.my-font-red{
-	color:#FF6856;
-	font-weight:bolder;
-}
+
 
 .free-col>input,.free-col>a{
 	width:100%;

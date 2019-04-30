@@ -4,3 +4,7 @@ li{box-sizing:border-box}
 ul{list-style:none;
     display:flex;}
 input{outline:none;}
+.my-font-red{
+    color:#FF6856;
+    font-weight:bolder;
+}
