@@ -277,3 +277,20 @@ nav div a{
 .f2-icon-1:target .f2-content-1{
     display:block;
 }
+
+/*f3*/
+.course-f3{width:70%;}
+.f3-left{text-align:right;}
+.f13-right{text-align:left;}
+.course-f3>ul>li>div>p:first-child{color:#05ab8a;}
+.course-f3>ul>li>div>p+p{font-size:0.6rem;color:#5a5959;}
+.course-f3>a{
+    display:block;
+    width:20%;
+    padding:1rem 2rem;
+    background:#05ab8a;
+    box-shadow: 0 4px 0 #079d76;
+    font-size: 2rem;
+    color:#fff;
+}
+
