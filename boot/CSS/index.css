@@ -110,7 +110,8 @@ nav div a{
 	position:absolute;
 	left:43.4%;top:860px;
 }
-.space-list>li{
+.space-list>li>a{
+	display:block;
 	width:40px;height:12px;
 	background:#fff;
 	border-radius:5px;
@@ -301,28 +302,34 @@ nav div a{
 	border-radius:10px;
 	text-align:center;
 }
+.sec-f3>ul:last-child li:hover{
+	box-shadow:0px 0px 15px 3px #C5FCEB;
+}
 .sec-f3>ul:last-child li>h3{
 	color:#33B397;
 	margin:15px;
 }
-.sec-f3>ul:last-child li>p{
-
-	margin-bottom:35px;
+.sec-f3>ul:last-child li>p{margin-bottom:35px;}
+.sec-f3-bottom{display:flex;
+	justify-content: space-around;
 }
-.sec-f3>ul:last-child li>div,.sec-f3>ul:last-child li>img{
-	float:left;margin:3%;
+.sec-f3-bottom>img{
+	width:18px;
+	height:20px;
+	margin-top:32px;
 }
-.sec-f3>ul:last-child .step1{
-	margin-left:26%;
-}
-.sec-f3>ul:last-child li>img{margin-top:12%}
-.sec-f3>ul:last-child li>div>a{
+.sec-f3>ul:last-child li>div>div>a{
 	display:block;
 	color:#666;
 	margin:5px
 }
 .sec-3f{margin:0 auto;width:75%;}
-.sec-3f .view{display:block;background:#05AB8A;margin:10px auto;}
+.sec-3f .view{
+	display:block;
+	background:#05AB8A;
+	margin:10px auto;
+}
+
 /*f4*/
 .sec-f4{
 	background-image:url("../img/index/method-bg2.jpg");

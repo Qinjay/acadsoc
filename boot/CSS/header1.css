@@ -7,10 +7,10 @@
     display:block;
     clear:both;
 }
-.header-1>img:first-child{
+.header-1 img:first-child{
     float:left;
 }
-.header-1>img:last-child{
+.header-1 img:last-child{
     float:right;
     margin-top:1rem;
 }

@@ -1,4 +1,22 @@
-.my-header1,.my-footer1{width:100%;}
+.my-footer1{width:100%;}
+.header-1{
+    margin:2rem auto;
+    width:60%;
+}
+.header-1:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.header-1>a>img{
+    float:left;
+}
+.header-1>img:last-child{
+    float:right;
+    margin-top:1rem;
+}
+/*sec*/
+
 .register-sec{
     width:70%;
     min-width:900px;
