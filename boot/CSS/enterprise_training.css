@@ -198,7 +198,11 @@ header>img{
     left:10%;
 }
 /*f7*/
-.sec-f7{text-align:center;width:44%;margin:3rem auto;}
+.sec-f7{
+    text-align:center;
+    width:44%;
+    margin:3rem auto;
+}
 .sec-f7>h1{margin:2rem;}
 .sec-f7>p{margin:2rem;font-size: 1.5rem}
 .sec-f7 input{
@@ -210,6 +214,21 @@ header>img{
 .sec-f7>div>input{width:48%;}
 .sec-f7>div>input+input{margin-left:1rem;}
 .sec-f7>input{width:100%;}
+.sec-f7>a{
+    display:block;
+    margin: 1rem auto;
+    width:40%;
+    line-height:4rem;
+    background:#ffd800;
+    font-size:1.2rem;
+    font-weight: bolder;
+    color:#000;
+    border-radius: 5px;
+}
+.sec-f7>.sec-f7-p{
+    margin:0;
+    font-size:2rem;
+}
 /*bottom-fixed*/
 .bot-fixed{width:100%;
     height:4rem;
@@ -271,6 +290,7 @@ header>img{
     display:none;
 }
 .right-fixed-bot>a:hover p{display:block }
+.right-fixed-bot>a:hover .ban-right{display:block }
 .right-fixed-bot>a>p:last-child,.right-fixed-bot>a>img:last-child{
     position:absolute;
 }
@@ -278,5 +298,12 @@ header>img{
     top:0.7rem;
     left:0.6rem;
 }
-.right-fixed-bot>a>img:last-child{}
-.ban-right{display: none}
+.ban-right{
+    top:-2rem;
+    left:-11rem;
+}
+
+.ban-right{
+    width:11rem;height:11rem;
+    display: none;
+}

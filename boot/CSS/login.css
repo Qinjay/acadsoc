@@ -1,6 +1,6 @@
 .my-footer1{width:100%;}
 .header-1{
-    margin:2rem auto;
+    margin:1.6rem auto;
     width:60%;
 }
 .header-1:after{
@@ -72,7 +72,11 @@
     border-radius: 23px;
     margin:2rem 0;
 }
-#view{width: 90%;display:block;background: #1BBC9B;}
+#view{
+    width: 90%;
+    display:block;
+    background: #1BBC9B;
+}
 .use-num>p>label{margin-right:50%}
 .use-num>p{padding:2rem 0}
 #zc{
@@ -80,12 +84,14 @@
     color:#f00;
     font-size:1.2rem;
 }
-.use-num{visibility:hidden;}
-.use-num:target{visibility:visible;}
+/*.use-num{visibility:hidden;}*/
+/*.use-num:target{visibility:visible;}*/
 /*手机验证*/
 .use-tell{
+    padding: 2rem 0;
+    background:#fff;
     position:absolute;
-    top:8rem;
+    top:6rem;
     visibility:hidden;
 }
 .use-tell:target{visibility:visible}

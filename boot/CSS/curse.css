@@ -163,7 +163,12 @@ nav div a{
     font-size:2rem;
     margin:3rem;
 }
-.f2-content>ul{height:30rem;margin:0 auto;}
+.f2-content>ul{
+    width:68%;
+    height:30rem;
+    margin:0 auto;
+
+}
 .f2-content>ul>li{margin:2rem auto;}
 .f2-content>ul>li>div{float:left;}
 
@@ -192,7 +197,7 @@ nav div a{
     margin-right:0.5rem;
 }
 #f2-content-8{
-    width:80%;
+    /*width:80%;*/
     margin:0 auto;
     position:relative;
     left:7%;
@@ -266,9 +271,18 @@ nav div a{
 }
 
 /*f3*/
-.course-f3>p{font-size:2rem;margin:10rem 0 7rem;}
-.course-f3{width:70%;margin:0 auto;}
-.course-f3>ul{width:85%;margin:0 auto;}
+.course-f3>p{
+    font-size:2rem;
+    margin:10rem 0 7rem;
+}
+.course-f3{
+    width:70%;
+    margin:0 auto;
+}
+.course-f3>ul{
+    width:85%;
+    margin:0 auto;
+}
 .f3-left{text-align:right;}
 .f13-right{text-align:left;}
 .course-f3>ul>li>img{margin:0 2rem;}
@@ -277,7 +291,10 @@ nav div a{
     color:#05ab8a;
     margin:1rem 0;
 }
-.course-f3>ul>li>div>p+p{font-size:0.6rem;color:#5a5959;}
+.course-f3>ul>li>div>p+p{
+    font-size:0.6rem;
+    color:#5a5959;
+}
 .course-f3>a{
     display:block;
     width:18%;
