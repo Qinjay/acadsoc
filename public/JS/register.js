@@ -48,7 +48,22 @@ function put(put,reg){
 				result=JSON.parse(result);
 				console.log(result);
 				if(result.code==200){
-				window.location.href="index.html";}
+				var ressuc=document.getElementById("ressuc");	
+				var tim=document.getElementById("tim")
+				ressuc.style.display="block"
+					var i = 4;
+					var t= setInterval(function() {
+						if (i == 0) {
+							window.location.href = "index.html";
+							clearInterval(t);
+						}
+						tim.innerHTML = i;
+						i--;
+						}, 1000);
+				 	// window.location.href="index.html";
+			}else{
+				alert("注册失败")
+			}
 
 			}
 		

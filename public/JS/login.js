@@ -29,17 +29,31 @@
 	view.onclick=function(){
 			var xhr=new XMLHttpRequest();
 			//console.log(xhr)
-			
-			xhr.open("get",`/user/login?utel=${utel.value}&upwd=${upwd.value}`,true);
-			xhr.send(null);
+			xhr.open("post","/user/login",true);
+			var formdata="utel="+utel.value+"&upwd="+upwd.value;
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+			xhr.send(formdata);
 			xhr.onreadystatechange=function(){
 			if(xhr.readyState==4&&xhr.status==200){
 				//console.log(11)
 			var result=xhr.responseText;
-				alert(result);
 				result=JSON.parse(result);
 				if(result.code==200){
-				window.location.href="index.html";}
+					var ressuc=document.getElementById("ressuc");	
+					var tim=document.getElementById("tim")
+					ressuc.style.display="block"
+						var i = 5;
+						var t= setInterval(function() {
+							if (i == 0) {
+								window.location.href = "index.html";
+								clearInterval(t);
+							}
+							tim.innerHTML = i;
+							i--;
+							}, 1000);
+						}else{
+							alert("用户名或密码错误！")
+						}
 			}
 			}
 

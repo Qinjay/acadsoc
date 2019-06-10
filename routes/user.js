@@ -28,9 +28,9 @@ router.post('/reg',function(req,res){
 
 
 //登陆 get login
-router.get("/login",function(req,res){
-   var utel=req.query.utel;
-   var upwd=req.query.upwd;
+router.post("/login",function(req,res){
+   var utel=req.body.utel;
+   var upwd=req.body.upwd;
    console.log(utel,upwd)
 	pool.query('SELECT * FROM user_list WHERE utel=? AND upwd=?',[utel,upwd],function(err,result){
 	//console.log(result)
@@ -43,5 +43,15 @@ router.get("/login",function(req,res){
 	
 	})
 
+})
+
+//购物车
+router.get("/cart",function(req,res){
+	var uid=req.uid;
+	pool.query('SELECT * FROM user_car WHERE uid=?',[uid],function(err,result){
+		if(err) throw err;
+		res.send({code:200,msg:result});
+		console.log(result)
+	})
 })
 module.exports=router

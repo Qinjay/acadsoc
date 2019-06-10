@@ -1,0 +1,75 @@
+.header-1{
+    margin:2rem auto;
+    width:60%;
+}
+.header-1:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.header-1>a>img{
+    float:left;
+}
+.header-1>img:last-child{
+    float:right;
+    margin-top:1rem;
+}
+section{
+    width:70%;
+    margin:0 auto;
+
+}
+.pnav{
+    border-bottom:3px solid #32B397;
+}
+ .pcon{
+    padding:1rem;margin:0.5rem;
+    display: flex;
+    text-align:left;
+} 
+.ptop{font-size:1.8rem;}
+.pcon>ul>li{
+    padding:1rem;
+    margin:0.5rem;
+    border:1px solid #B0B0B0;
+    width:210px;
+}
+.pcon>ul>li>img{margin:1.5rem;}
+.pcon>ul>li>p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin:0.3rem auto;
+}
+.pcon>ul>li>p+p{
+    font-weight:normal;
+}
+.btime{font-size:1rem;}
+#addcar{
+    display: flex;
+    justify-content: space-between;
+    margin:1rem auto;
+}
+#addcar>div>button{
+    width:20px;
+    height:20px;
+}
+#addcar>span{
+    display: block;
+    text-align: center;
+    width:90px;
+    border: 1px solid #32B397;
+    border-radius: 5px;
+    
+}
+#addcar>span>a{color:#000;}
+.gosum{
+    width:80px;
+    display: block;
+    float: right;
+    text-align:center;
+    padding:10px;
+    font-size:1.5rem;
+    color:#fff;
+    background: #32B397;
+    border-radius: 5px;
+}

@@ -134,3 +134,21 @@ input+p.hid{
 	 .user-login-left{width:60%;margin:1rem auto}
 	 
 }*/
+#ressuc{
+    position: fixed;
+    top:25%;left:20%;
+    font-size:30px;
+    background:rgba(50, 179, 157, 0.6);
+    width:50rem;height:20rem;
+    border-radius:10px;
+    line-height:20rem;
+    text-align: center;
+    color:#fff;
+    display: none;
+    z-index:999;
+}
+#ressuc>span{
+    font-size:45px;
+    font-weight:bolder;
+    font-style: italic;
+}

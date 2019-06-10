@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/comm.css">
+    <link rel="stylesheet" href="../CSS/product.css">
+    <script src="../Js/vue.js"></script>
+    <script src="../JS/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <a href="index.html#index">
+                <img src="../img/header1/logo2.png" alt=""/></a>
+             <img src="../img/header1/hotline.png" alt=""/>
+        </div>
+    </header>
+    <section id="app">
+        <div v-for="(elem , i) of course">
+            <div class="pnav"><!--v-for=(elem , i) of course :key="i"-->
+                <p class="ptop">{{elem.pname}}</p> <!--elem.pname  -->
+            </div>
+            <div class="pcon">
+                <img :src=`../img/product/${elem.img}` alt="">
+                <ul>
+                    <li v-for="(e,n) of elem.plist">
+                        <img src="../img/product/one.png" alt="">
+                        <p>课程：{{e}}</p>
+                        <p>开班时间：<span class="btime">2019-6-1</span></p>
+                        <p>￥2400.00</p>
+                        <div id="addcar">
+                            <div>
+                                <button>-</button>
+                                <span id="con">1</span>
+                                <button>+</button>
+                            </div>
+                            <span><a href="javascipt:;">加入购物车</a> </span> 
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+           
+         </div>
+         <a href="shoppingcar.html" class="gosum">结算</a>
+    </section>
+    <script src="../JS/product.js"></script>
+    <script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            course:[
+        {pname:"少儿",plist:["自然拼读课程","少儿趣味课程"],img:"childclass1.png"},
+        {pname:"小学",plist:["三年级","四年级","五年级","六年级"],img:"childclass2.png"},
+        {pname:"初中精品班",plist:["初一","初二","冲刺中考"],img:"english.png"},
+        {pname:"高中精品班",plist:["高一","高二","冲刺高考"],img:"english.png"},
+        {pname:"英语考级",plist:["CET四级","CET六级"],img:"univercity_cet.jpg"},
+        {pname:"考研/考博",plist:["集训营"],img:"univercity_kaoyan.jpg"},
+        {pname:"出国留学",plist:["托福","雅思","GRE"],img:"univercity_abroad.jpg"},
+        ]
+        }
+})
+
+    </script>
+</body>
+</html>
