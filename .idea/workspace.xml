@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3db950d6-2da8-49a9-b351-47f9121dc2fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/JS/login.js" afterPath="$PROJECT_DIR$/public/JS/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/JS/shoppingcar.js" afterPath="$PROJECT_DIR$/public/JS/shoppingcar.js" />
     </list>
     <ignored path="acadsoc阿卡索.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +75,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="38" />
+    <option name="x" value="-5" />
+    <option name="y" value="40" />
     <option name="width" value="1924" />
     <option name="height" value="1003" />
   </component>
@@ -157,8 +155,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,7 +333,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="38" width="1924" height="1003" extended-state="0" />
+    <frame x="-5" y="40" width="1924" height="1003" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19916143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

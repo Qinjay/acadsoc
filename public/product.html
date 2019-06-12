@@ -28,7 +28,7 @@
                 <ul>
                     <li v-for="(e,n) of elem.plist">
                         <img src="../img/product/one.png" alt="">
-                        <p>课程：{{e}}</p>
+                        <p class="pname">课程：{{e}}</p>
                         <p>开班时间：<span class="btime">2019-6-1</span></p>
                         <p>￥2400.00</p>
                         <div id="addcar">
@@ -37,7 +37,7 @@
                                 <span id="con">1</span>
                                 <button>+</button>
                             </div>
-                            <span><a href="javascipt:;">加入购物车</a> </span> 
+                            <span><a href="javascipt:;" class="btn">加入购物车</a> </span> 
                         </div>
                         
                     </li>
@@ -53,17 +53,16 @@
         el:"#app",
         data:{
             course:[
-        {pname:"少儿",plist:["自然拼读课程","少儿趣味课程"],img:"childclass1.png"},
-        {pname:"小学",plist:["三年级","四年级","五年级","六年级"],img:"childclass2.png"},
-        {pname:"初中精品班",plist:["初一","初二","冲刺中考"],img:"english.png"},
-        {pname:"高中精品班",plist:["高一","高二","冲刺高考"],img:"english.png"},
-        {pname:"英语考级",plist:["CET四级","CET六级"],img:"univercity_cet.jpg"},
-        {pname:"考研/考博",plist:["集训营"],img:"univercity_kaoyan.jpg"},
-        {pname:"出国留学",plist:["托福","雅思","GRE"],img:"univercity_abroad.jpg"},
-        ]
+                {pname:"少儿",plist:["自然拼读","少儿趣味"],img:"childclass1.png"},
+                {pname:"小学",plist:["三年级","四年级","五年级","六年级"],img:"childclass2.png"},
+                {pname:"初中精品班",plist:["初一","初二","冲刺中考"],img:"english.png"},
+                {pname:"高中精品班",plist:["高一","高二","冲刺高考"],img:"english.png"},
+                {pname:"英语考级",plist:["CET四级","CET六级"],img:"univercity_cet.jpg"},
+                {pname:"考研/考博",plist:["TEST集训营"],img:"univercity_kaoyan.jpg"},
+                {pname:"出国留学",plist:["托福","雅思","GRE"],img:"univercity_abroad.jpg"},
+            ]
         }
 })
-
     </script>
 </body>
 </html>

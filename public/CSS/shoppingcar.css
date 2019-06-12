@@ -15,6 +15,11 @@
     margin-top:1rem;
 }
 section{width:70%;margin: 2rem auto}
+.gotopro{
+    display: block;
+    margin:1rem;
+    color: #6FC4B1;
+}
 .carC>ul,.carN{
     display: flex;
     justify-content: space-around;
@@ -38,4 +43,8 @@ section{width:70%;margin: 2rem auto}
     border-radius: 5px;
     color:#fff
     
+}
+ul>li{
+    width: 16%;
+    /* text-align: center; */
 }

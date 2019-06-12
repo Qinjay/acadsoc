@@ -18,8 +18,9 @@
     </header>
     <section>
         <div>
+            <a href="product.html" class="gotopro">&lt;&lt;返回商品列表</a>
             <ul class="carN">
-                <li> <input type="checkbox" class="checkAll">全选</li>
+                <li> <input type="checkbox" class="checkAll" >全选</li>
                 <li>课程名</li>
                 <li>单价</li>
                 <li>数量</li>
@@ -27,7 +28,7 @@
                 <li>操作</li>
             </ul>
             <div class="carC">
-                <ul>
+                <!-- <ul>
                     <input type="checkbox" class="check">
                     <li>三年级</li>
                     <li class="price">￥2400.00</li>
@@ -74,15 +75,42 @@
                     </div>
                     <li class="sumprice">￥2400.00</li>
                     <li class="remove"><a href="javascrpt:;">删除</a> </li>
-                </ul>
-                    <p class="total">共计0件商品，金额￥0.00元</p>
-                    <a href="javascript:;" class="pay">结算</a>
+                </ul> -->
             </div>
+            <p class="total">共计0件商品，金额￥0.00元</p>
+            <a href="javascript:;" class="pay">结算</a>
         </div>
 
     </section>
     <script src="../JS/jquery-1.11.3.js"></script>
-		<script src="../JS/axios.min.js"></script>
-    <script src="../JS/shoppingcar.js"></script>
+        <script src="../JS/axios.min.js"></script>
+        <script>
+ /*           $.get("/user/cart",{"uid":1},function(result){
+        var msg=result.msg;
+        //console.log(msg)
+        var html="";
+     for(var i=0;i<msg.length;i++){
+        //console.log(msg[i]);
+        //cId.push(msg[i].class_id);
+        html+=`<ul>
+            <input type="checkbox" class="check">
+            <li>${msg[i].class_name}</li>
+            <li class="price">￥${(msg[i].class_price).toFixed(2)}</li>
+            <div>
+                <button>-</button>
+                <span id="con">${msg[i].class_count}</span>
+                <button>+</button>
+            </div>
+            <li class="sumprice">￥${((msg[i].class_price)*(msg[i].class_count)).toFixed(2)}</li>
+            <li class="remove"><a href="javascrpt:;">删除</a> </li>
+        </ul>`
+
+    }
+    $(".carC").html(html);
+    })
+    */
+        </script>
+        <script src="../JS/shoppingcar.js"></script>
+
 </body>
 </html>

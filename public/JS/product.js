@@ -1,4 +1,6 @@
-$(function(){
+//$(function(){
+$(window).on("load",function(){
+
     var $app=$("#app");
     var n;
     $app.on("click","button",function(){
@@ -15,5 +17,16 @@ $(function(){
                 }
 
          
+    })
+
+    $(".btn").click(function(){
+       // console.log($(this))
+        var count=$(this).parent().prev().children("#con").html();
+        var pname=$(this).parent().parent().prev().prev().prev().html().slice(3);
+    
+        $.post("/user/add",{class_count:count,class_name:pname},function(result){
+            alert(result.msg)
+            
+        })
     })
 })
