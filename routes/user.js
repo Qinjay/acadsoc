@@ -21,8 +21,8 @@ router.post('/reg',function(req,res){
 	pool.query("INSERT INTO user_list SET ?",[req.body],function(err,result){
 		if(err)throw err;
 		if(result.affectedRows>0){
-			res.send({code:200,msg:'reg suc'})
-		}else{res.send({code:400,msg:'reg err'})}
+			res.send({code:200,msg:'注册成功'})
+		}else{res.send({code:400,msg:'注册失败'})}
 	 })
 });
 
@@ -33,7 +33,7 @@ router.post("/login",function(req,res){
    var upwd=req.body.upwd;
    //console.log(utel,upwd)
 	pool.query('SELECT uid FROM user_list WHERE utel=? AND upwd=?',[utel,upwd],function(err,result){
-	//console.log(result)
+	console.log(result)
 	if(err) throw err;
 	if(result.length==0){
 		res.send({code:400,msg:"用户名或密码错误"})
@@ -59,10 +59,10 @@ router.get("/cart",function(req,res){
 //购物车 删除商品
 router.post('/del',function(req,res){
 	var class_name=req.body.class_name;
-	console.log(class_name);
+	//console.log(class_name);
 	pool.query("DELETE FROM `user_car` WHERE class_name= ? ",[class_name],function(err,result){
 		if(err)throw err;
-		console.log(result);
+		//console.log(result);
 		if(result.affectedRows>0){
 			res.send({code:200,msg:'del suc'})
 		}else{res.send({code:400,msg:'del err'})}
@@ -96,7 +96,7 @@ router.post('/add',function(req,res){
 					pool.query("INSERT INTO user_car VALUE(null,?,? ,? ,? ,?)",[uid,class_id,class_name,class_count,class_price],function(err,result){
 						if(err)throw err;
 						if(result.affectedRows>0){
-							res.send({code:200,msg:'add suc'});
+							res.send({code:200,msg:'该商品已加入购物车'});
 						}else{
 							res.send({code:400,msg:'add err'});
 						}
@@ -106,7 +106,7 @@ router.post('/add',function(req,res){
 						//console.log(222);
 						if(err)throw err;
 						if(result.affectedRows>0){
-							res.send({code:200,msg:'add suc'});
+							res.send({code:200,msg:'该商品已加入购物车'});
 						}else{
 							res.send({code:400,msg:'add err'});
 						}

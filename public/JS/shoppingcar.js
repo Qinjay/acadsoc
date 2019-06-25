@@ -1,6 +1,21 @@
 
 //$(function(){
 $(window).on("load",function(){
+	//引入脚文件
+		$.ajax({
+		url:"footer.html",
+		type:"get",
+		success:function(html){
+			$(html).replaceAll("#footer");
+			$("<link rel='stylesheet' href='CSS/footer.css'/>").appendTo("head");
+			$("<script src='js/footer.js'/>").appendTo("body");
+		}
+	})
+
+
+
+
+
 	$.get("/user/cart",{"uid":1},function(result){
         var msg=result.msg;
         //console.log(msg)

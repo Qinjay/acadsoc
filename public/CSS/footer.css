@@ -1,10 +1,11 @@
 *{margin:0;padding:0;}
-a,span{
+.index-footer a,.index-footer span{
     text-decoration:none;
     color:#BAB8B8;font-size:0.9rem;
     margin:0.5rem;
 }
-ul{list-style:none;}
+.index-footer ul{list-style:none;display:block;}
+.index-footer ul>li{width:100%}
 
 
 
